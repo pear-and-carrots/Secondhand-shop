@@ -1,0 +1,119 @@
+<!-- 1.轮播图 -->
+<view style="margin:20rpx;border-radius: 40rpx;">
+  <swiper autoplay interval="2000" circular indicator-dots indicator-color="#0080FF">
+    <block wx:for="{{banner}}" wx:key="_id">
+      <swiper-item>
+        <image src="{{item.src}}" style="width:100%;height:300rpx"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 2.导航栏 -->
+<view class="user_content" style="margin-top:0rpx;margin-right: 2%;margin-left: 2%;">
+  <view class="user_main">
+    <view class="orders_warp">
+
+      <!-- 2.1.公告 -->
+      <view class="notice">
+        <view class="notice_1">公告</view>
+        <view class="shu_line"></view>
+        <swiper autoplay interval="2000" circular vertical class="notice_2">
+          <swiper-item class="ee">
+            <view>听说清明节放假三天</view>
+          </swiper-item>
+          <swiper-item class="ee">
+            <view>保护环境，从我做起</view>
+          </swiper-item>
+          <swiper-item class="ee">
+            <view>校园咸鱼，资源利用</view>
+          </swiper-item>
+        </swiper>
+        <!-- <view class="shu_line"></view>
+  <view class="notice_3">查看更多</view> -->
+      </view>
+      <!-- 2.2.迷你应用 -->
+      <swiper circular indicator-dots indicator-color="#0080FF">
+        <swiper-item>
+          <!-- <view class="orders_title">我的工具</view> -->
+          <view class="orders_contrnt">
+            <navigator class="orders_navi" url="../../pages/good/good">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">学校概况</view>
+            </navigator>
+            <navigator class="orders_navi" url="../../pages/collect/collect">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">机构设置</view>
+            </navigator>
+            <navigator class="orders_navi" url="../comments/comments">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">人才培养</view>
+            </navigator>
+            <navigator class="orders_navi" url="../footmark/footmark">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">学科建设</view>
+            </navigator>
+          </view>
+          <view class="orders_contrnt">
+            <navigator class="orders_navi" url="../../pages/good/good">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">师资队伍</view>
+            </navigator>
+            <navigator class="orders_navi" url="../../pages/collect/collect">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">招生就业</view>
+            </navigator>
+            <navigator class="orders_navi" url="../comments/comments">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">国际交流</view>
+            </navigator>
+            <navigator class="orders_navi" url="../footmark/footmark">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">科学研究</view>
+            </navigator>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <!-- <view class="orders_title">我的工具</view> -->
+          <view class="orders_contrnt1">
+            <navigator class="orders_navi" url="../../pages/good/good">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">党的建设</view>
+            </navigator>
+            <navigator class="orders_navi" url="../../pages/collect/collect">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">学生工作</view>
+            </navigator>
+          </view>
+
+        </swiper-item>
+      </swiper>
+
+    </view>
+  </view>
+</view>
+
+<view class="line"></view>
+
+<!-- 3.新闻资讯 -->
+<view class="news">
+  <view class="news1 {{curIndex === Index?'active':''}}" wx:for="{{news}}" wx:key="name" data-id="{{item.id}}"
+    data-index="{{index}}" bindtap="getNews">{{item.name}}</view>
+</view>
+
+<view class="list">
+  <view class="item" wx:for="{{getNews}}" wx:key="_id" data-id="{{item._id}}">
+    <navigator url="../indexDetail/indexDetail?itemId={{item.id}}">
+      <view class="title">{{item.title}}</view>
+      <view class="item-wrapper">
+        <view class="img">
+          <image src="{{item.image}}"></image>
+        </view>
+        <view class="info">
+          {{item.detail}}
+        </view>
+      </view>
+      <view class="read-num"><text>233</text>次阅读</view>
+    </navigator>
+  </view>
+</view>

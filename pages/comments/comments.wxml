@@ -1,0 +1,12 @@
+    <block wx:for="{{goods}}" wx:key="date">
+    <navigator class="" target="" url="../productDetail/productDetail" hover-class="navigator-hover" open-type="navigate">
+    <view class="liuyan_user" bindlongpress="bindlongpress">
+        <image class="liuyan_detail_userimg" src="{{item.avatarUrl}}"></image>
+        <view class="linyan_detail_xingxi">
+        <view class="liuyan_detail_username" hover-start-time="2">{{item.nickName}}</view>
+        <view class="liuyan_detail_contect">{{item.pinglun}}</view>
+        <view class="liuyan_detail_time">{{item.DATE}}</view>
+        </view>  
+    </view>
+  </navigator>
+    </block>

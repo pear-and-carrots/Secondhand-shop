@@ -1,0 +1,26 @@
+<view class="all">
+  <view class="footprint">
+    <image class="footprint_goods" src="../../images/info_right.jpg"></image>
+    <view class="footprint_price">￥50.00</view>
+  </view>
+
+  <view class="footprint">
+    <image class="footprint_goods" src="../../images/item3.png"></image>
+    <view class="footprint_price">￥50.00</view>
+  </view>
+
+  <view class="footprint">
+    <image class="footprint_goods" src="../../images/item7.png"></image>
+    <view class="footprint_price">￥50.00</view>
+  </view>
+
+  <view class="footprint">
+    <image class="footprint_goods" src="../../images/item7.png"></image>
+    <view class="footprint_price">￥50.00</view>
+  </view>
+
+  <view class="footprint">
+    <image class="footprint_goods" src="../../images/item7.png"></image>
+    <view class="footprint_price">￥50.00</view>
+  </view>
+</view>

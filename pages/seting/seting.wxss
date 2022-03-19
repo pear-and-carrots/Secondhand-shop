@@ -1,0 +1,22 @@
+.set-page {
+  font-size: 40rpx;
+  font-weight: 700;
+  color: rgb(93, 93, 133);
+  text-align: center;
+  padding: 20rpx;
+}
+
+.dh{
+  width: 93%;
+  height: 70rpx;
+  display: flex;
+  margin: 20rpx;
+  padding: 10rpx;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10rpx;
+  background-color: #fff;
+  box-shadow: 2rpx 5rpx 5rpx 4rpx #8888;
+}

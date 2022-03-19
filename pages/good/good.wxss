@@ -1,0 +1,131 @@
+.back{
+  width: 100%;
+  height: 100rpx;
+  background-color: #519ff3;
+  border-bottom-left-radius: 10rpx;
+  border-bottom-right-radius: 10rpx;
+}
+
+.back1{
+  width: 120rpx;
+  height: 60rpx;
+  margin-left: 85%;
+  margin-top: 5%;
+  /* background-color: #fff; */
+  color: #fff;
+}
+
+  .list{
+    background-color: #fff;
+    box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(152, 165, 209, 0.533);
+    border-radius: 10rpx;
+    display: flex;
+    padding:20rpx;
+    display: flex;
+    margin-top: 2%;
+    margin-right: 2%;
+    margin-left: 2%;
+  }
+  
+  .list-img{
+    width: 184rpx;
+    height: 184rpx;
+  }
+  
+  .list-img image{
+    width: 184rpx;
+    height: 184rpx;
+  }
+  
+  .list-info{
+    padding-left: 20rpx;
+    position: relative;
+    flex: 1;
+  }
+  
+  .title{
+    color: #333;
+    font-size:30rpx;
+    margin-bottom: 14rpx;
+  }
+  
+  .info{
+    font-size: 28rpx;
+    color: #666;
+  }
+  
+  .info-bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 20rpx;
+    font-size: 24rpx;
+    display: flex;
+  }
+  
+  .price{
+    color: red;
+    margin-right: 30rpx;
+  }
+  
+  .num{
+    color: #666;
+  }
+  .orders_image{
+    width:60rpx;
+    height:60rpx
+  }
+
+  .checkbox{
+    margin-left: 90%;
+    margin-top: 40rpx;
+  }
+
+  /* 4.底下导航 */
+.shopping{
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  border-top: 1rpx solid #eee;
+  border-radius: 15rpx;
+  padding-top: 15rpx;
+  padding-left: 20%;
+  padding-right: 20%;
+  background: #fff;
+  font-size: 28rpx;
+}
+
+/* .shop_img{
+  flex: 1;
+  text-align: right;
+
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.shop_img image{
+  width: 50rpx;
+  height: 50rpx;
+} */
+
+.shanchu{
+  line-height: 60rpx;
+  margin-left: 75%;
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  font-weight: 550;
+  width: 100rpx;
+  height: 60rpx;
+  border: 4rpx solid rgb(155, 69, 69);
+  border-radius: 30rpx;
+}

@@ -1,0 +1,90 @@
+<!-- 1.搜索 -->
+<view class="header">
+  <view class="loaction">
+    <navigator hover-class="none" url="../selectCity/selectCity">{{location}}</navigator>
+  </view>
+  <view class="search">
+    <navigator url="../search/search">请输入你想要的内容...</navigator>
+  </view>
+</view>
+
+
+<view style="margin:20rpx;border-radius: 40rpx;">
+  <swiper autoplay interval="2000" circular indicator-dots>
+    <block wx:for="{{banner}}" wx:key="_id">
+      <swiper-item>
+        <image src="{{item.src}}" style="width:100%;height:300rpx"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
+
+<!-- 2.公告 -->
+<view class="notice">
+  <view class="notice_1">公告</view>
+  <view class="shu_line"></view>
+  <swiper autoplay interval="2000" circular vertical class="notice_2">
+    <swiper-item class="ee">
+      <view>听说清明节放假三天</view>
+    </swiper-item>
+    <swiper-item class="ee">
+      <view>保护环境，从我做起</view>
+    </swiper-item>
+    <swiper-item class="ee">
+      <view>校园咸鱼，资源利用</view>
+    </swiper-item>
+  </swiper>
+  <!-- <view class="shu_line"></view>
+  <view class="notice_3">查看更多</view> -->
+</view>
+
+<!-- 3.产品分类 -->
+<!-- <view class="product-type">
+  <view class="item" wx:for="{{productType}}" wx:key="index" bindtap="productType" data-mark="{{item.id}}">
+    <image src="{{item.imgUrl}}"></image>
+    <view>{{item.name}}</view>
+  </view>
+</view>
+
+<import src="../../templates/foodList/foodList.wxml" />
+<view wx:for="{{list}}" wx:key="index" bindtap='productDetail' data-id='{{item.id}}'>
+<template is='foodList' data="{{...item}}"></template>
+</view> -->
+
+<!-- 3.热门分类 -->
+ <view class="user_content"> 
+  <view class="user_main">
+    <view class="orders_warp">
+      <view class="orders_title">热门分类</view>
+      <view class="orders_contrnt">
+        <navigator class="orders_navi" wx:for="{{orders}}" wx:key="name" >
+         <view  data-name="{{item.name}}"   bindtap="shuma">
+            <image src="{{item.src}}" class="orders_image"></image>
+          <view class="title">{{item.name}}</view>
+        </view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view> 
+
+<!-- <button bindtap="getMore" wx:if="{{isShow}}">点击加载更多</button> -->
+
+<view>{{moreInfo}}</view>
+
+ <!-- 4.商品列表 -->
+ <navigator url="../productDetail/productDetail?_id={{item._id}}" wx:for="{{goods}}" wx:key="_id" data-id="{{item._id}}">
+  <view class="list">
+  <view class="list-img">
+    <image src="{{item.src[0]}}"></image>
+  </view>
+  <view class="list-info">
+    <view class="title">{{item.biaoti}}</view>
+    <view class="info">{{item.textarea}}</view>
+    <view class="info-bottom">
+      <view class="price">￥{{item.daoshojia}}</view>
+      <view class="num">233想要</view>
+    </view>
+  </view>
+</view>
+</navigator>

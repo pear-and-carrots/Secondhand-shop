@@ -1,0 +1,50 @@
+<!-- 1.顶部商品 -->
+<view class="shopping">
+  <view class="shop_img">
+    <view class="collect_main">
+      <!-- <block wx:for="{{goods}}" wx:key="_id"> -->
+      <navigator class="goods_item" url="/pages/productDetail/productDetail?_id={{item._id}}" data-id="{{item._id}}"
+        bindlongpress="bindlongpress">
+        <!--左侧图片-->
+        <view class="goods_img_wrap">
+          <image class="goods_imags" src="../../images/item1.png" mode="widthFix" />
+        </view>
+        <!--右侧哦商品-->
+        <view class="goods-info_wrap">
+          <view class="goods_name">标题</view>
+          <view class="goods_textarea">分数打火锅吧同分异构你听过</view>
+          <view class="goods_pruce">¥55.0</view>
+        </view>
+      </navigator>
+      <!-- </block> -->
+    </view>
+  </view>
+</view>
+
+<!-- 2.聊天 -->
+<view class="liaotian">
+<block wx:for="{{xiaoxi}}">
+
+  
+  <!-- 2.1右侧聊天 -->
+  <view class="liaotian_user"style="display: flex;flex-direction: row-reverse;" wx:if="{{item.openid!==openid}}">
+    <image class="liaotian_user_img" src="{{item.avatarUrl}}" mode="widthFix"></image>
+    <view class="liaotian_user_textarea" style="background-color: rgb(252, 214, 89);">{{item.chat}}</view>
+  </view>
+
+  <!-- 2.2左侧聊天 -->
+  <view class="liaotian_user" style="display: flex;flex-direction: row" wx:if="{{item.openid==openid}}">
+    <image class="liaotian_user_img" src="{{item.avatarUrl}}" mode="widthFix"></image>
+    <view class="liaotian_user_textarea" style="background-color: #fff;">{{item.chat}}</view>
+  </view>
+</block>
+</view>
+
+<!-- 3.底部输入框 -->
+<view class="input">
+  <view class="liuyan1">
+    <input class="liuyan_input" placeholder="点击发起私聊..." value="{{chat}}" bindblur="bindblur" confirm-type="done" />
+    <view class="liuyan_fason" bindtap="pinglun" hover-class="5">发送</view>
+  </view>
+  <image src="../../images/add.png" class="liuyan_img"></image>
+</view>

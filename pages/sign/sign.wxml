@@ -1,0 +1,53 @@
+<form class="" report-submit="false" bindsubmit="bindsubmit">
+  <view class="leixing">
+    <!-- 1.商品类型 -->
+    <picker class="" name="pricker" mode="selector" range="{{array}}" range-key="" value="{{index}}"
+      bindchange="bindPickerChange">
+      <view class="picker">
+        当前选择：{{array[index]}}
+      </view>
+    </picker>
+    <image src="cloud://office-123.6f66-office-123-1304780270/icon/jt.png"
+      style="width:50rpx;height:50rpx;margin-right:30rpx"></image>
+  </view>
+
+
+  <view class="leixing">
+    <!-- 2.商品标题 -->
+    <input name="biaoti" placeholder="输入商品标题" value='{{form_info}}'/>
+  </view>
+
+  <!-- 3.商品详情 -->
+  <view class="leixing_">
+    <textarea name="textarea" placeholder="请描述物品详情，例如品牌，规格，几成新，交货方式，购买渠道等"value='{{form_info}}'></textarea>
+      <view class="images_box">
+        <block wx:key="imgbox" wx:for="{{imgbox}}">
+          <view class='img-box'>
+            <image class='img' src='{{item}}'></image>
+            <view class='img-delect' data-deindex='{{index}}' bindtap='imgDelete1'>
+              <image class='img' src='../../images/delect.png'></image>
+            </view>
+          </view>
+        </block>
+        <view class='img-box' bindtap='addPic1' wx:if="{{imgbox.length<9}}">
+          <image class='img' src='cloud://office-123.6f66-office-123-1304780270/icon/sign_img.png'></image>
+        </view>
+      </view>
+  </view>
+
+  <!-- 4.商品属性 -->
+  <view class="leixing_2" style="border-top-left-radius:10rpx;border-top-right-radius:10rpx">
+    价格<input name="jiage" placeholder="￥0.00" value='{{form_info}}'/>
+  </view>
+  <view class="leixing_1">
+    入手价<input name="daoshojia" placeholder="￥0.00" value='{{form_info}}'/>
+  </view>
+  <view class="leixing_1" style="border-bottom-left-radius:10rpx;border-bottom-right-radius:10rpx">
+    联系方式：<input name="shojihaoma" placeholder="请输入手机号" value='{{form_info}}'/>
+  </view>
+
+  <view class="sign_button">
+    <button size="mini" class="sign_in" bindtap="fb" form-type="submit" type="default">提交</button>
+  </view>
+
+</form>

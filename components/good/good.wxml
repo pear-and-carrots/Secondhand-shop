@@ -1,0 +1,14 @@
+<block wx:for="{{goods}}" wx:key="_id"  url="/pages/productDetail/productDetail?_id={{item._id}}">
+ <view class="list">
+  <view class="list-img">
+    <image src="{{item.src[0]}}"></image>
+  </view>
+  <view class="list-info">
+    <view class="title">{{item.biaoti}}</view>
+    <view class="info">{{item.textarea}}</view>
+    <view class="info-bottom">
+      <view class="price">￥{{item.jiage}}</view>
+    </view>
+  </view>
+</view>
+</block>

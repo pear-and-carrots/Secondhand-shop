@@ -1,0 +1,32 @@
+<view class="back">
+  <view class="back1"></view>
+  <view class="back1"></view>
+  <view class="back1"></view>
+</view>
+<view class="yuan">
+  <view class="yuan1"></view>
+  <view class="yuan2"></view>
+</view>
+<view class="line"></view>
+
+<view class="liuyan_user"wx:for="{{xiaoxi}}"
+  bindlongpress="bindlongpress" data-openid="{{item.openid}}">
+  <image class="liuyan_detail_userimg" src="{{item.avatarUrl}}" mode="widthFix"></image>
+  <view class="linyan_detail_xingxi">
+    <view class="liuyan_detail_username" hover-start-time="2">{{item.nickName}}</view>
+    <view class="liuyan_detail_contect">{{item.chat[0].chat}}</view>
+    <view class="liuyan_detail_time">{{item.chat[0].DATE}}</view>
+  </view>
+  <image class="" style="width:120rpx;height:120rpx;margin:10rpx" src="{{item.src}}" ></image>
+</view>
+<view class="liuyan_user"wx:for="{{wodexiaoxi}}"
+  bindlongpress="bindlongpress" data-openid="{{item._id}}">
+  <image class="liuyan_detail_userimg" src="{{item.avatarUrl}}" mode="widthFix"></image>
+  <view class="linyan_detail_xingxi">
+    <view class="liuyan_detail_username" hover-start-time="2">{{item.nickName}}</view>
+    <view class="liuyan_detail_contect">{{item.chat[0].chat}}</view>
+    <view class="liuyan_detail_time">{{item.chat[0].DATE}}</view>
+  </view>
+  <image class="" style="width:120rpx;height:120rpx;margin:10rpx" src="{{item.chat[0].src}}" mode="widthFix"></image>
+</view>
+

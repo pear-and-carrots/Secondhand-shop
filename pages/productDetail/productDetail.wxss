@@ -1,0 +1,194 @@
+/* pages/productDetail/productDetail.wxss */
+page{
+  background: #f1f1f1;
+}
+
+.banner{
+  height: 380rpx;
+}
+
+.jieshao{
+  background: #fff;
+  padding: 20rpx;
+  margin-bottom: 20rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.productInfo{
+  margin-left: 2%;
+  margin-right: 2%;
+  background: #fff;
+  padding: 16rpx;
+  margin-bottom: 20rpx;
+}
+
+.xinxi{
+  color: #666;
+  font-size: 26rpx;
+  margin-bottom: 10rpx;
+}
+
+.img{
+  width: 100%;
+  height: 540rpx;
+}
+
+.desc{
+  color: #666;
+  font-size: 26rpx;
+  line-height: 44rpx;
+}
+
+/* 3.留言板 */
+.ping{
+  background: #fff;
+  margin-left: 2%;
+  margin-right: 2%;
+  color: #999;
+  font-size: 26rpx;
+  margin-bottom: 130rpx;
+  border-radius: 15rpx;
+}
+
+.liuyan{
+  margin: 10rpx;
+  font-size: 38rpx;
+  font-weight: 500;
+  color: #000;
+}
+
+.liuyan1{
+  background-color: rgb(233, 231, 231);
+  height: 70rpx;
+  margin: 2%;
+  border-radius: 20rpx;
+  display: flex;
+  flex-direction: row;
+  /* align-self: center;
+  align-items: center;
+  text-align: center; */
+  justify-content: space-between;
+}
+
+.liuyan_input{
+  width: 100%;
+  padding: 10rpx;
+}
+
+.liuyan_fason{
+  color: rgb(255, 253, 253);
+  font-size: 32rpx;
+  font-weight: 550;
+  height: 70rpx;
+  width: 15%;
+  text-align: center;
+  line-height: 70rpx;
+  border-radius: 20rpx;
+  background-color: rgb(33, 160, 160);
+}
+/*评论*/
+.liuyan_user{
+  display: flex;
+  margin: 2%;
+  padding: 10rpx;
+  /* background-color: rgb(245, 244, 244); */
+  border-bottom: rgb(197, 197, 197) solid 2rpx;
+}
+
+.liuyan_detail_userimg{
+  flex: 1;
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 100rpx;
+  overflow: hidden;
+  float: left;
+}
+.linyan_detail_xingxi{
+  flex: 8;
+float: right;
+margin-left: 20rpx;
+}
+.liuyan_detail_username{
+  font-size: 30rpx;
+  font-style: italic;
+  font-weight:500;
+  color: #000;
+}
+.liuyan_detail_contect{
+  margin-top: 15rpx;
+  margin-bottom: 15rpx;
+  color: #000;
+}
+/* 4.底下导航 */
+.shopping{
+  /* height: 200rpx; */
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  border-top: 1rpx solid #eee;
+  border-radius: 15rpx;
+  padding-top: 15rpx;
+  /* padding-bottom: 5rpx; */
+  background: #fff;
+  /* color: #fff; */
+  font-size: 28rpx;
+}
+.shop_img{
+  flex: 1;
+  text-align: right;
+  /* padding: 20rpx 0; */
+  /* text-align: center;   */
+  display: flex;
+  flex-direction: row;
+  align-self: center;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+}
+.shop_img image{
+  width: 50rpx;
+  height: 50rpx;
+}
+
+.go_shop{
+  width: 200rpx;
+  text-align: center;
+  border-radius: 20rpx 0 0 20rpx;
+  background: red;
+  padding: 16rpx 0;
+}
+
+.buy_now{
+  width: 200rpx;
+  background: pink;
+  padding: 16rpx 0 ;
+  text-align: center;
+  border-radius: 0 20rpx 20rpx 0;
+}
+.input{
+  border: red;
+}
+.kefu_button{
+  display: flex; 
+  flex: 1;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1rpx solid rgb(236, 235, 235);
+
+}
+.kefu_button1{
+  position: absolute;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}

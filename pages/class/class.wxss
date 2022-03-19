@@ -1,0 +1,42 @@
+/* 2.我的订单/我的工具 */
+.user_content .user_main .orders_warp {
+  margin-top: 15rpx;
+  background-color: #fff;
+  box-shadow: 2rpx 5rpx 5rpx 4rpx #8888;
+  border-radius: 20rpx;
+  /* margin-right: 20rpx;
+  margin-left: 20rpx; */
+}
+
+.user_content .user_main .orders_warp .orders_title {
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 30rpx;
+  font-weight: 500;
+}
+
+.user_content .user_main .orders_warp .orders_contrnt {
+  display: flex;
+}
+
+.user_content .user_main .orders_warp .orders_contrnt .orders_navi {
+  padding: 10rpx;
+  flex: 1;
+  font-size: 28rpx;
+  text-align: center;
+}
+
+.user_content .user_main .orders_warp .orders_contrnt .orders_navi .iconfont {
+  color: #ed4450;
+  font-size: 40rpx;
+}
+
+.user_content .user_main .orders_warp .orders_contrnt .orders_navi .order_name {
+  font-size: 28rpx;
+}
+
+/* line */
+.line {
+  margin: 5%;
+  border-bottom: 2rpx solid #888;
+}

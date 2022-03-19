@@ -1,0 +1,42 @@
+<view class="back">
+<view class="back1" bindtap="guanli" wx:if="{{finish == ''}}">管理</view>
+<view class="back1" bindtap="finish" wx:if="{{finish != ''}}">完成</view>
+</view>
+
+ <block wx:for="{{goods}}" wx:key="_id"  url="/pages/productDetail/productDetail?_id={{item._id}}">
+ <view class="list" data-id="{{item._id}}"  bindlongpress="bindlongpress">
+  <view class="list-img">
+    <image style="border-radius: 10rpx" src="{{item.src[0]}}"></image>
+  </view>
+  <view class="list-info">
+    <view class="title">{{item.biaoti}}</view>
+    <view class="info">{{item.textarea}}</view>
+    <view class="info-bottom">
+      <view class="price">￥{{item.jiage}}</view>
+    </view>
+    <checkbox class="checkbox" wx:if="{{checkbox != ''}}" value="选中"></checkbox>
+  </view>
+</view>
+</block>
+
+  <!-- 底部导航 -->
+  <view class="shopping">
+    <!-- <view class="shop_img">
+      <view>
+        <image src="cloud://office-123.6f66-office-123-1304780270/icon/siliao.png" bindtap="goShop"></image>
+        <view>私聊</view>
+      </view>
+      <view bindtap="addShop">
+        <image src="cloud://office-123.6f66-office-123-1304780270/icon/shoucan.png" bindtap="goShop"></image>
+        <view>收藏</view>
+      </view>
+      
+      <view>
+        <image src="cloud://office-123.6f66-office-123-1304780270/icon/share.png" bindtap="goShop"></image>
+        <view>分享</view>
+      </view>
+    </view> -->
+    <!-- <view class="go_shop" bindtap="addShop">收藏</view>
+    <view class="buy_now">直接购买</view> -->
+    <view class="shanchu"  wx:if="{{finish != ''}}">删除</view>
+  </view>

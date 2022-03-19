@@ -1,0 +1,23 @@
+.all {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+
+}
+
+.footprint {
+  width: 28%;
+  height: 200rpx;
+  margin: 2%;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  /* justify-content: left; */
+
+}
+
+.footprint_goods {
+  width: 100%;
+  height: 100%;
+  border-radius: 20rpx;
+}

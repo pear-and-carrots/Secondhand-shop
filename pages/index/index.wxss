@@ -1,0 +1,204 @@
+/* 搜索 */
+.header{
+  display: flex;
+  padding: 10rpx;
+  background: #fff;
+  align-items: center;
+}
+
+.loaction{
+  width: 100rpx;
+  text-align: center;
+}
+
+.search{
+  background: #f1f1f1f1;
+  color: #acacac;
+  flex: 1;
+  font-size: 28rpx;
+  padding: 10rpx;
+  border-radius: 12rpx;
+}
+
+
+.shu_line{
+  width: 1rpx;
+  height: 60rpx;
+  background-color: #8888;
+  margin-left: 2rpx;
+  margin-right: 5rpx;
+}
+
+.banner{
+  height: 300rpx;
+  width: 100%;
+  margin-bottom: 30rpx;
+}
+
+.notice{
+  width: 96%;
+  background : #fff;
+  margin-bottom: 20rpx;
+  height: 60rpx;
+  display:flex;
+  align-self: center;
+  /* 上下居中 */
+  align-items: center;
+  /* 平均放在主格方向 */
+  justify-content: space-between;
+  border-radius: 10rpx;
+  box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(152, 165, 209, 0.533);
+}
+
+.notice_1{
+  height:60rpx;
+  width:15%;
+  font-size: 32rpx;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-style: italic;
+}
+
+.notice_2{
+  height:60rpx;
+  width:81%;
+  font-size: 28rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ee{
+  display: flex;
+  align-items: center;
+}
+
+/* .notice_3{
+  height:60rpx;
+  width:20%;
+  font-size: 32rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+
+/* 2.分类 */
+.product-type{
+  background : #fff;
+  margin-left: 20rpx;
+  margin-right: 20rpx;
+  padding-top: 20rpx;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.item{
+  width: 25%;
+  text-align: center;
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 20rpx;
+}
+
+.item image{
+  width: 74rpx;
+  height: 74rpx;
+}
+
+/* 3.热门分类 */
+.user_content .user_main .orders_warp {
+  /* width: 96%; */
+  background-color: #fff;
+  box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(152, 165, 209, 0.533);
+  border-radius: 10rpx;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+.user_content .user_main .orders_warp .orders_title {
+  padding: 20rpx;
+  border-bottom: 1px solid #ccc;
+  font-size: 34rpx;
+  font-weight: 600;
+  border-left:10rpx solid rgba(3, 50, 112, 0.533);
+}
+.user_content .user_main .orders_warp .orders_contrnt {
+  display: flex;
+}
+.user_content .user_main .orders_warp .orders_contrnt .orders_navi {
+  padding: 10rpx;
+  flex: 1;
+  font-size: 28rpx;
+  text-align: center;
+}
+.user_content .user_main .orders_warp .orders_contrnt .orders_navi .iconfont {
+  color: #ed4450;
+  font-size: 40rpx;
+}
+.user_content .user_main .orders_warp .orders_contrnt .orders_navi .order_name {
+  font-size: 28rpx;
+}
+
+/* 4.商品列表 */
+.list{
+  background-color: #fff;
+  box-shadow: 1rpx 1rpx 1rpx 1rpx rgba(152, 165, 209, 0.533);
+  border-radius: 10rpx;
+  display: flex;
+  padding:20rpx;
+  display: flex;
+  margin-top: 2%;
+  margin-right: 2%;
+  margin-left: 2%;
+}
+
+.list-img{
+  width: 184rpx;
+  height: 184rpx;
+}
+
+.list-img image{
+  width: 184rpx;
+  height: 184rpx;
+}
+
+.list-info{
+  padding-left: 20rpx;
+  position: relative;
+  flex: 1;
+}
+
+.title{
+  color: #333;
+  font-size:30rpx;
+  margin-bottom: 14rpx;
+}
+
+.info{
+  font-size: 28rpx;
+  color: #666;
+}
+
+.info-bottom{
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 20rpx;
+  font-size: 24rpx;
+  display: flex;
+}
+
+.price{
+  color: red;
+  margin-right: 30rpx;
+}
+
+.num{
+  color: #666;
+}
+.orders_image{
+  width:60rpx;
+  height:60rpx
+}

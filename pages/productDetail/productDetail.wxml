@@ -1,0 +1,62 @@
+<!-- 商品详情页 -->
+<block>
+  <swiper class="banner" autoplay="true">
+    <swiper-item>
+      <image src="{{goods.src}}"></image>
+    </swiper-item>
+  </swiper>
+
+  <!-- 商品名称 -->
+  <view class="jieshao" hover-start-time="2">{{goods.biaoti}}</view>
+    <!-- 图文信息 -->
+    <view class="productInfo">
+    <view class="xinxi">商品详情</view>
+    <!-- <image src="../../images/info_right.jpg" class="img"></image> -->
+    <view class="desc">
+    {{goods.textarea}}
+    </view>
+  </view>
+
+
+  <!-- 留言板 -->
+  <view class="ping">
+    <text class="liuyan">留言板</text>
+    <view class="liuyan1">
+      <input class="liuyan_input" placeholder="留言了解更多详情。。。" bindblur="neirong" value='{{pinglun}}'/>
+      <view class="liuyan_fason" bindtap="pinglun" hover-class="5">发送</view>
+    </view>
+    <block wx:for="{{goods.pinglun}}" wx:key="date">
+    <view class="liuyan_user" data-DATE="{{item.DATE}}" data-openid="{{item.openid}}" data-pinglun="{{item.pinglun}}" bindlongpress="bindlongpress">
+        <image class="liuyan_detail_userimg" src="{{item.avatarUrl}}"></image>
+        <view class="linyan_detail_xingxi">
+        <view class="liuyan_detail_username" hover-start-time="2">{{item.nickName}}</view>
+        <view class="liuyan_detail_contect">{{item.pinglun}}</view>
+        <view class="liuyan_detail_time">{{item.DATE}}</view>
+        </view>  
+    </view>
+    </block>
+  </view>
+
+
+  <!-- 商品详情 -->
+  <view class="shopping">
+    <view class="shop_img">
+      <view class="kefu_button">
+        <image src="cloud://office-123.6f66-office-123-1304780270/icon/siliao.png" bindtap="chta"></image>
+        <view>私聊</view>
+      </view>
+      <view bindtap="addShop"class="kefu_button">
+        <image src="cloud://office-123.6f66-office-123-1304780270/icon/shoucan.png" bindtap="goShop"></image>
+        <view>收藏</view>
+      </view>
+      <view class="kefu_button">
+        <image src="cloud://office-123.6f66-office-123-1304780270/icon/share.png" bindtap="goShop"></image>
+        <view>分享</view>
+                    <button class="kefu_button1" open-type="share" size="mini" >
+             </button>
+      </view>
+    </view>
+    <!-- <view class="go_shop" bindtap="addShop">收藏</view>
+    <view class="buy_now">直接购买</view> -->
+  </view>
+</block>

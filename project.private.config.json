@@ -1,0 +1,84 @@
+{
+  "setting": {},
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "pages/sign/sign",
+          "pathName": "pages/sign/sign",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "搜索",
+          "pathName": "pages/search/search",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "详情页面",
+          "pathName": "pages/productDetail/productDetail",
+          "query": "_id=28ee4e3e605380130b6335f56c702f45",
+          "scene": null
+        },
+        {
+          "name": "收藏",
+          "pathName": "pages/collect/collect",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的咸鱼",
+          "pathName": "pages/good/good",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/about/about",
+          "query": "_id=28ee4e3e60535faa0b6054193e546a88",
+          "scene": null
+        },
+        {
+          "name": "pages/index/index",
+          "pathName": "pages/index/index",
+          "query": "_id=28ee4e3e60535faa0b6054193e546a88",
+          "scene": null
+        },
+        {
+          "name": "聊天",
+          "pathName": "pages/chat/chat",
+          "query": "openid=o9tFJ40zxOSFxbLj6jm5v9YfsrWo",
+          "scene": null
+        },
+        {
+          "name": "pages/comments/comments",
+          "pathName": "pages/comments/comments",
+          "query": "openid=o9tFJ40zxOSFxbLj6jm5v9YfsrWo",
+          "scene": null
+        },
+        {
+          "name": "消息",
+          "pathName": "pages/new/new",
+          "query": "",
+          "scene": null
+        },
+        {
+          "name": "评论",
+          "pathName": "pages/comments/comments",
+          "query": "openid=o9tFJ40zxOSFxbLj6jm5v9YfsrWo",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

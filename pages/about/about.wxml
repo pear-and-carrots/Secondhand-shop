@@ -1,0 +1,130 @@
+<view class="back">
+
+</view>
+
+<!-- 1.个人信息 -->
+<view class="my_message">
+  <view class="my_message_top">
+    <view class="user_img">
+      <!-- <open-data type="userAvatarUrl"></open-data> -->
+      <image src="../../images/info_right.jpg" wx:if="{{avatarUrl == ''}}" mode="widthFix"></image>
+      <image src="{{avatarUrl}}" class="denglu" wx:if="{{avatarUrl != ''}}" mode="widthFix"></image>
+    </view>
+    <view class="user_name">
+      <!-- <open-data type="userNickName"></open-data> -->
+      <text bindtap="getUserInfo" wx:if="{{nickName == ''}}">点击登录</text>
+      <text wx:if="{{nickName != ''}}">{{nickName}}</text>
+    </view>
+    <view class="seting">
+      <image bindtap="seting" src="cloud://office-123.6f66-office-123-1304780270/user/seting.png"
+        style="width:90rpx;height:90rpx"></image>
+      <!-- <image bindtap="seting" src="../images/item2.png"
+        style="width:90rpx;height:90rpx"></image> -->
+    </view>
+  </view>
+
+  <view class="name">
+    <image src="../../images/qianming.png" style="width:50rpx;height:50rpx">
+    </image>
+    <input placeholder="个性签名" wx:if="{{input == ''}}" bindblur="input" bindfocus="input" confirm-type="done"/>
+    <view>{{input}}</view>
+  </view>
+
+</view>
+
+<!-- <view style="margin-top:120rpx" class="dh">
+  <view class="goods">
+    <image src="cloud://office-123.6f66-office-123-1304780270/user/my_goods.png"
+      style="width:60rpx;height:60rpx;margin:5rpx"></image>
+    <view class="title">我的咸鱼</view>
+  </view>
+  <view class="goods">
+    <image src="cloud://office-123.6f66-office-123-1304780270/user/shoucang.png"
+      style="width:60rpx;height:60rpx;margin:10rpx"></image>
+    <view class="title">咸鱼收藏</view>
+  </view>
+  <view class="goods">
+    <image src="cloud://office-123.6f66-office-123-1304780270/user/pingjia.png"
+      style="width:60rpx;height:60rpx;margin:10rpx"></image>
+    <view class="title">咸鱼评价</view>
+  </view>
+  <view class="goods">
+    <image src="cloud://office-123.6f66-office-123-1304780270/user/dingdang.png"
+      style="width:60rpx;height:60rpx;margin:10rpx"></image>
+    <view class="title">全部交易</view>
+  </view>
+</view> -->
+
+<!-- 2.我的订单 -->
+<!-- <view class="user_content" style="margin-top:120rpx;margin-right: 2%;margin-left: 2%;"> 
+  <view class="user_main">
+    <view class="orders_warp">
+      <view class="orders_title">我的订单</view>
+      <view class="orders_contrnt">
+        <navigator class="orders_navi">
+          <image src="cloud://office-123.6f66-office-123-1304780270/user/dingdang.png"
+      style="width:60rpx;height:60rpx;margin:5rpx"></image>
+          <view class="title">全部订单</view>
+        </navigator>
+        <navigator class="orders_navi">
+          <image src="cloud://office-123.6f66-office-123-1304780270/icon/daifukuang.png"
+            style="width:60rpx;height:60rpx;margin:5rpx"></image>
+          <view class="title">待付款</view>
+        </navigator>
+        <navigator class="orders_navi">
+          <image src="cloud://office-123.6f66-office-123-1304780270/icon/daishouhuo.png"
+            style="width:60rpx;height:60rpx;margin:5rpx"></image>
+          <view class="title">待收货</view>
+        </navigator>
+        <navigator class="orders_navi">
+          <image src="cloud://office-123.6f66-office-123-1304780270/icon/tuihuo.png"
+            style="width:60rpx;height:60rpx;margin:5rpx"></image>
+          <view class="title">退款/退货</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>  -->
+
+<!-- 3.我的工具 -->
+<view class="user_content" style="margin-top:120rpx;margin-right: 2%;margin-left: 2%;">
+  <view class="user_main">
+    <view class="orders_warp">
+      <view class="orders_title">我的工具</view>
+      <view class="orders_contrnt">
+        <navigator class="orders_navi" url="../../pages/good/good">
+          <image src="cloud://office-123.6f66-office-123-1304780270/user/my_goods.png"
+            style="width:60rpx;height:60rpx;margin:5rpx"></image>
+          <view class="title">我的咸鱼</view>
+        </navigator>
+        <navigator class="orders_navi" url="../../pages/collect/collect">
+          <image src="cloud://office-123.6f66-office-123-1304780270/user/shoucang.png"
+            style="width:60rpx;height:60rpx;margin:5rpx"></image>
+          <view class="title">咸鱼收藏</view>
+        </navigator>
+        <navigator class="orders_navi" url="../comments/comments">
+          <image src="cloud://office-123.6f66-office-123-1304780270/user/pingjia.png"
+            style="width:60rpx;height:60rpx;margin:5rpx"></image>
+          <view class="title">咸鱼评价</view>
+        </navigator>
+        <navigator class="orders_navi" url="../footmark/footmark">
+          <image src="cloud://office-123.6f66-office-123-1304780270/icon/zuji.png"
+            style="width:60rpx;height:60rpx;margin:5rpx"></image>
+          <view class="title">咸鱼足迹</view>
+        </navigator>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- 4.退出登录 -->
+<text wx:if="{{nickName != ''}}" class="end" bindtap="end">退出登录</text>
+
+<!-- 5.退出登录蒙版 -->
+<view class="modalDlg" wx:if="{{showModal}}">
+  <text class="close" bindtap="close">X</text>
+  <text class="title">提示</text>
+  <text class="title2">确认退出登录吗？</text>
+  <button class='reject' bindtap="remove" size="mini"> 确定 </button>
+</view>
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>

@@ -1,0 +1,273 @@
+/* miniprogram/pages/testSAS/testSAS.wxss */
+page {
+  /* background: #fcbe3960; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.question_area{
+  display: flex;
+  flex-direction: row;
+  background-color: #fff;
+  margin: 2%;
+  border-radius: 20rpx;
+  border: 1rpx solid #8888;
+}
+
+.area{
+  text-align: center;
+  width: 5%;
+  margin: 10rpx;
+  background-color: rgb(235, 248, 255);
+  padding: 10rpx;
+  border: 1rpx solid #8888;
+  border-radius: 10rpx;
+}
+
+.sheet {
+  background: #fff;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+  margin-left: 2%;
+  margin-right: 2%;
+  width: 96%;
+  height: 750rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.sheet1 {
+  background: #fff;
+  border-radius: 20rpx;
+  margin-top: 100rpx;
+  /* margin-left: 8%;
+  margin-right: 8%; */
+  padding: 20rpx;
+  width: 90%;
+  /* height: 300rpx; */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.naire {
+  height: 620rpx;
+}
+
+.textarea {
+  width: 90%;
+  margin-left: 3%;
+  margin-right: 3%;
+  margin-top: -60rpx;
+  padding: 15rpx;
+  border: 1rpx solid #8888;
+  border-radius: 20rpx;
+}
+
+.question {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-top: 40rpx;
+  margin-left: 32rpx;
+}
+
+.border {
+  height: 2rpx;
+  width: 90%;
+  background-color: #d4d4d4;
+  margin: 16rpx auto;
+}
+
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  font-size: 30rpx;
+  text-indent: 14rpx;
+  margin-top: 40rpx;
+}
+
+.radio {
+  margin-bottom: 14rpx;
+}
+
+/* .button-group {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: auto;
+  justify-content: space-between;
+} */
+
+.bt{
+  margin-top: 500rpx;
+}
+
+.button {
+  background: rgb(126, 173, 126);
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.button::after {
+  border: 0;
+}
+
+.id {
+  text-align: center;
+  font-size: 27rpx;
+  color: #8888;
+  margin: auto;
+  margin-top: 20rpx;
+}
+
+/* 管理端上传 */
+.shangchuan {
+  position: relative;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+ 
+  margin-top: 30rpx;
+  background-color: #fff;
+  margin-left: 2%;
+  margin-right: 2%;
+}
+
+.pricer {
+  margin-top: 10rpx;
+  margin-bottom: 10rpx;
+  background: #f1f1f1;
+  border-radius: 12rpx;
+  padding: 10rpx;
+  border: 1rpx solid #8888;
+  color: #888;
+}
+
+.input {
+  background-color: #f5fdf1;
+  margin-top: 10rpx;
+  padding: 10rpx;
+  border-radius: 12rpx;
+  border: 1rpx solid #8888;
+}
+
+.slider {
+  width: 94%;
+  margin-top: 10rpx;
+  margin-right: 40rpx auto;
+  margin-left: 40rpx auto;
+  background-color: #f1f1f1;
+  padding: 20rpx;
+  border-radius: 15rpx;
+  border: 1rpx solid #8888;
+}
+
+.container1{
+  /* height: 700rpx; */
+  margin-bottom: -300rpx;
+}
+
+.selectTrue {
+  margin-top: 20rpx;
+  margin-left: 82%;
+  font-size: 25rpx;
+  font-weight: 550;
+}
+
+.flex-x {
+  display: flex;
+  align-items: center;
+}
+
+.template_title,
+.template_title1,
+.template_title_list {
+  height: 90rpx;
+  background: #fff;
+  justify-content: space-between;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.template_title1 {
+  background: none;
+}
+
+.template_title_list {
+  margin-bottom: 4rpx;
+}
+
+.template_title>view,
+.template_title1>view {
+  font-size: 32rpx;
+  color: #8f8f8f;
+  flex-shrink: 0;
+  margin-right: 20rpx;
+}
+
+.template_title>input {
+  font-size: 28rpx;
+  color: #808080;
+  text-align: right;
+  flex-grow: 1;
+}
+
+.selectBox {
+  margin: 12rpx;  
+}
+
+/* .selectBoxActive{
+  color: green;
+  font-size: 45rpx;
+  font-weight: 700;
+  text-align: center;
+} */
+
+/* 添加内容 */
+
+.add_con>text {
+  height: 40rpx;
+  width: 40rpx;
+  font-size: 40rpx;
+  display: block;
+  margin-right: 20rpx;
+  line-height: 44rpx;
+  font-weight: 700;
+  color: #fff;
+  background-color: crimson;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 35rpx;
+}
+
+.add_con>view {
+  font-size: 32rpx;
+  color: #7885cb;
+}
+
+/* 删除内容 */
+
+.del {
+  width: 40rpx;
+  height: 40rpx;
+  font-size: 32rpx;
+  color: #fff;
+  background-color: crimson;
+  margin-right: 14rpx;
+  border-radius: 100%;
+  text-align: center;
+  line-height: 35rpx;
+  font-size: 45rpx;
+  font-weight: 700;
+}
+
+input {
+  flex-grow: 1;
+  font-size: 28rpx;
+  color: #808080;
+}
+
+.btn {
+  margin-top: 120rpx;
+}

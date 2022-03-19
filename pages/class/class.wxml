@@ -1,0 +1,64 @@
+<!-- 2.导航栏 -->
+<view class="user_content" style="margin-top:0rpx;margin-right: 2%;margin-left: 2%;">
+  <view class="user_main">
+    <view class="orders_warp">
+      <!-- 2.2.迷你应用 -->
+      <swiper circular indicator-dots indicator-color="#0080FF">
+        <swiper-item>
+          <!-- <view class="orders_title">我的工具</view> -->
+          <view class="orders_contrnt">
+            <navigator class="orders_navi" url="../../pages/good/good">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">班级通知</view>
+            </navigator>
+            <navigator class="orders_navi" url="../../pages/collect/collect">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">课程作业</view>
+            </navigator>
+            <navigator class="orders_navi" url="../comments/comments">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">考勤打卡</view>
+            </navigator>
+            <navigator class="orders_navi" url="../footmark/footmark">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">信息统计</view>
+            </navigator>
+          </view>
+          <view class="orders_contrnt">
+            <navigator class="orders_navi" url="../../pages/good/good">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">共享文档</view>
+            </navigator>
+            <navigator class="orders_navi" url="../../pages/collect/collect">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">课程测验</view>
+            </navigator>
+            <navigator class="orders_navi" url="../comments/comments">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">国际交流</view>
+            </navigator>
+            <navigator class="orders_navi" url="../footmark/footmark">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">科学研究</view>
+            </navigator>
+          </view>
+        </swiper-item>
+        <swiper-item>
+          <!-- <view class="orders_title">我的工具</view> -->
+          <view class="orders_contrnt">
+            <navigator class="orders_navi" url="../../pages/good/good">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">党的建设</view>
+            </navigator>
+            <navigator class="orders_navi" url="../../pages/collect/collect">
+              <image src="../../images/classroom.png" style="width:60rpx;height:60rpx;margin:5rpx"></image>
+              <view class="title">学生工作</view>
+            </navigator>
+          </view>
+
+        </swiper-item>
+      </swiper>
+
+    </view>
+  </view>
+</view>

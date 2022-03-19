@@ -1,0 +1,24 @@
+<!-- 1.地址列表 -->
+<block>
+  <view class="dh">
+    <view class="user">小叮当 150****8526</view>
+    <view class="address">
+      <image src="cloud://office-123.6f66-office-123-1304780270/user/moreng.png" style="width:50rpx;height:50rpx">
+      </image>
+      <text>广东省湛江市麻章区湖光镇海大路一号广东海洋大学主校区</text>
+    </view>
+  </view>
+  <view class="dh">
+    <view class="user">小叮当 150****8526</view>
+    <view class="address">
+      <image src="cloud://office-123.6f66-office-123-1304780270/user/moreng.png" style="width:50rpx;height:50rpx">
+      </image>
+      <text>广东省湛江市麻章区湖光镇海大路一号广东海洋大学主校区</text>
+    </view>
+  </view>
+</block>
+
+<!-- 2.提交按钮 -->
+<view class="add-wrap" hover-class="plus-hover">
+  <view class="tijiao">提交</view>
+</view>

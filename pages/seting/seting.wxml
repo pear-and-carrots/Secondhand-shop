@@ -1,0 +1,23 @@
+<text class="set-page">设置中心</text>
+<input class="dh" placeholder="昵称" />
+<view class="dh">
+  <brithday></brithday>
+  <image src="cloud://office-123.6f66-office-123-1304780270/icon/jt.png" style="width:40rpx;height:40rpx;"></image>
+</view>
+<view class="dh">
+  <picker range="{{test}}">性别</picker>
+  <image src="cloud://office-123.6f66-office-123-1304780270/icon/jt.png" style="width:40rpx;height:40rpx;"></image>
+</view>
+<navigator class="dh" url="../address/address">收货地址管理
+  <image src="cloud://office-123.6f66-office-123-1304780270/icon/jt.png" style="width:40rpx;height:40rpx;"></image>
+</navigator>
+<view class="dh">账户与安全
+  <image src="cloud://office-123.6f66-office-123-1304780270/icon/jt.png" style="width:40rpx;height:40rpx;"></image>
+</view>
+<view class="dh">客服联系
+  <image bindtap="phone" src="cloud://office-123.6f66-office-123-1304780270/icon/dianhua.png"
+    style="width:40rpx;height:40rpx;"></image>
+</view>
+<view class="dh">建议反馈
+  <image src="cloud://office-123.6f66-office-123-1304780270/icon/jt.png" style="width:40rpx;height:40rpx;"></image>
+</view>
